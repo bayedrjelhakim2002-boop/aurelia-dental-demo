@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia Dental &amp; Aesthetics | Boston Cosmetic &amp; Implant Dentistry</title>
+  <meta name="description" content="Aurelia Dental & Aesthetics delivers premier cosmetic, implant, and biomimetic restorative dentistry in Boston, Brookline & Wellesley. Experience 3D digital smile design." />
+  <link rel="canonical" href="https://www.aureliadental.com/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aurelia Dental &amp; Aesthetics | Boston Cosmetic &amp; Implant Dentistry" />
+  <meta property="og:description" content="We care about your smile. Minimally invasive porcelain veneers, guided 3D dental implants, and clear aligners." />
+
+  <!-- Tailwind CSS & Medical Fonts (Montserrat & Open Sans) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Open Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            med: {
+              blue: '#0088cc',       // Primary Medical Cyan/Blue from reference
+              hover: '#0073b0',      // Deepened hover blue
+              light: '#00a3f5',      // Bright cyan accent
+              navy: '#0b1e28',       // Deep footer navy
+              navyDark: '#08171f',   // Sub-footer
+              soft: '#f4f8fc',       // Ultra-soft cool blue section bg
+              softAlt: '#eef5fb',    // Alternating soft blue
+              border: '#dbe7f3',     // Crisp border blue-grey
+              darkText: '#1e293b'    // Deep slate text
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Medical theme decorative divider (Exact match to reference image: horizontal bar with centered diamond) */
+    .med-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+      margin-bottom: 24px;
+    }
+    .med-divider::before,
+    .med-divider::after {
+      content: "";
+      display: inline-block;
+      width: 42px;
+      height: 2px;
+      background-color: #0088cc;
+    }
+    .med-divider-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #0088cc;
+      transform: rotate(45deg);
+    }
+
+    /* Left blue accent indicator */
+    .med-callout-border {
+      border-left: 4px solid #0088cc;
+    }
+
+    /* Smooth transitions */
+    .med-card-hover {
+      transition: all 0.25s ease-in-out;
+    }
+    .med-card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -6px rgba(0, 136, 204, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Aurelia Dental & Aesthetics",
+    "image": "/images/hero.jpg",
+    "telephone": "+1-617-555-0194",
+    "email": "concierge@aureliadental.com",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "280 Newbury St, Suite 400",
+      "addressLocality": "Boston",
+      "addressRegion": "MA",
+      "postalCode": "02116",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:30",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-700 font-sans antialiased selection:bg-med-blue selection:text-white">
+
+  <!-- 1. Top Contact Info Bar (Exact match to reference top bar) -->
+  <div class="bg-med-blue text-white text-xs py-2 px-4 border-b border-med-light/30">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <!-- Contact items with icons -->
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
+        <a href="tel:+16175550194" class="inline-flex items-center gap-1.5 hover:text-white/80 transition">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+          </svg>
+          <span>(617) 555-0194</span>
+        </a>
+        <a href="mailto:concierge@aureliadental.com" class="hidden md:inline-flex items-center gap-1.5 hover:text-white/80 transition">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+          </svg>
+          <span>concierge@aureliadental.com</span>
+        </a>
+        <span class="inline-flex items-center gap-1.5 text-white/90">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+          </svg>
+          <span>Mon - Fri: 7:30 AM - 6:00 PM</span>
+        </span>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="hidden sm:flex items-center gap-1.5">
+        <a href="#" aria-label="Facebook" class="w-6 h-6 rounded flex items-center justify-center bg-white/15 hover:bg-white/30 text-white transition text-xs font-bold">f</a>
+        <a href="#" aria-label="Twitter" class="w-6 h-6 rounded flex items-center justify-center bg-white/15 hover:bg-white/30 text-white transition text-xs font-bold">t</a>
+        <a href="#" aria-label="LinkedIn" class="w-6 h-6 rounded flex items-center justify-center bg-white/15 hover:bg-white/30 text-white transition text-xs font-bold">in</a>
+        <a href="#" aria-label="Instagram" class="w-6 h-6 rounded flex items-center justify-center bg-white/15 hover:bg-white/30 text-white transition text-xs font-bold">ig</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Main Navigation Header (Clean white with blue medical logo) -->
+  <header class="sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded bg-med-blue flex items-center justify-center text-white shadow-sm">
+          <!-- Medical Cross Icon -->
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="block font-heading font-extrabold tracking-tight text-med-blue text-xl leading-none">
+            AURELIA <span class="text-slate-800">DENTAL</span>
+          </span>
+          <span class="block text-[10px] uppercase font-semibold tracking-[0.22em] text-slate-400 mt-0.5">
+            Cosmetic &amp; Aesthetics
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links (Clean uppercase sans-serif) -->
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-7 text-xs font-heading font-bold text-slate-700 tracking-wider uppercase">
+        <a href="#" class="text-med-blue hover:text-med-hover transition">Home</a>
+        <a href="#about" class="hover:text-med-blue transition">About Us</a>
+        <a href="#services" class="hover:text-med-blue transition">Services</a>
+        <a href="#treatments" class="hover:text-med-blue transition">Treatments</a>
+        <a href="#technology" class="hover:text-med-blue transition">Technology</a>
+        <a href="#doctors" class="hover:text-med-blue transition">Doctors</a>
+        <a href="#faq" class="hover:text-med-blue transition">FAQ</a>
+        <a href="#reviews" class="hover:text-med-blue transition">Reviews</a>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="flex items-center gap-3">
+        <a href="#booking" class="hidden sm:inline-flex items-center gap-2 bg-med-blue hover:bg-med-hover text-white text-xs font-heading font-bold uppercase tracking-wider px-5 py-3 rounded shadow-sm hover:shadow transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Make Appointment
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded text-slate-700 hover:text-med-blue hover:bg-slate-100" aria-label="Toggle navigation">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2 font-heading font-bold text-xs uppercase tracking-wider text-slate-700 shadow-lg">
+      <a href="#" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">Home</a>
+      <a href="#about" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">About Us</a>
+      <a href="#services" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">Services</a>
+      <a href="#treatments" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">Treatments</a>
+      <a href="#technology" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">Technology</a>
+      <a href="#doctors" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">Doctors</a>
+      <a href="#faq" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">FAQ</a>
+      <a href="#reviews" class="mobile-nav-link block py-2 px-3 rounded hover:bg-med-soft hover:text-med-blue">Reviews</a>
+      <a href="#booking" class="mobile-nav-link block text-center bg-med-blue text-white py-3 rounded mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <!-- 3. Hero Section (Medical Banner with Slider Controls & Exact Headline Style) -->
+  <section class="relative bg-slate-900 overflow-hidden">
+    <!-- Background Image with Soft Medical Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="./images/hero.jpg" alt="Aurelia Dental Clinic" class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/60"></div>
+    </div>
+
+    <!-- Slider Chevrons on Left and Right (Exact match to reference UI) -->
+    <button type="button" aria-label="Previous Slide" class="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-med-blue/80 hover:bg-med-blue text-white items-center justify-center transition shadow-lg">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <button type="button" aria-label="Next Slide" class="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-med-blue/80 hover:bg-med-blue text-white items-center justify-center transition shadow-lg">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-36 lg:pt-28 lg:pb-44 text-white">
+      <div class="max-w-3xl space-y-5">
+        <p class="text-xs sm:text-sm font-heading font-semibold uppercase tracking-[0.25em] text-med-light flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-med-light"></span>
+          Exceptional Dental Services
+        </p>
+
+        <!-- Bold Headline: WE CARE ABOUT YOUR HEALTH / SMILE -->
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tight leading-tight">
+          We Care About Your <span class="text-med-light">Smile</span>
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+          From minimally invasive porcelain veneers to guided dental implants and clear aligner therapy, we combine clinical precision with a calm, concierge patient experience in Back Bay Boston.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-3.5 pt-3">
+          <a href="#booking" class="bg-med-blue hover:bg-med-hover text-white text-xs font-heading font-bold uppercase tracking-wider px-6 py-3.5 rounded shadow-lg transition">
+            Request Consultation
+          </a>
+          <a href="#treatments" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white text-xs font-heading font-bold uppercase tracking-wider px-6 py-3.5 rounded transition">
+            Explore Treatments
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Three Callout Feature Boxes (Exact match to reference: 3 solid blue boxes overlapping bottom of hero) -->
+  <section class="relative z-30 -mt-16 sm:-mt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 shadow-2xl rounded overflow-hidden">
+      <!-- Box 1: Emergency Care (Medium Blue #0088cc) -->
+      <div class="bg-[#0082c8] text-white p-8 flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-heading font-bold text-lg uppercase tracking-wider">Emergency Dental</h3>
+            <svg class="w-7 h-7 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <p class="text-xs text-white/90 leading-relaxed">
+            Same-day urgent appointments for acute tooth pain, chipped porcelain veneers, or implant discomfort with on-call specialists.
+          </p>
+        </div>
+        <div class="pt-6">
+          <a href="tel:+16175550194" class="inline-block border border-white/60 hover:bg-white hover:text-[#0082c8] text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Call (617) 555-0194
+          </a>
+        </div>
+      </div>
+
+      <!-- Box 2: Doctors Timetable (Bright Cyan/Blue #0096e6) -->
+      <div class="bg-[#0096e6] text-white p-8 flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-heading font-bold text-lg uppercase tracking-wider">Doctors Timetable</h3>
+            <svg class="w-7 h-7 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <p class="text-xs text-white/90 leading-relaxed">
+            Flexible early morning and evening smile consultations with Dr. Hannah Bennett (Cosmetics) and Dr. David Okafor (Implants).
+          </p>
+        </div>
+        <div class="pt-6">
+          <a href="#doctors" class="inline-block border border-white/60 hover:bg-white hover:text-[#0096e6] text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            View Doctors
+          </a>
+        </div>
+      </div>
+
+      <!-- Box 3: Opening Hours (Deep Medical Blue #006aa8) -->
+      <div class="bg-[#006aa8] text-white p-8 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-heading font-bold text-lg uppercase tracking-wider">Opening Hours</h3>
+            <svg class="w-7 h-7 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div class="space-y-2 text-xs text-white/90 divide-y divide-white/10">
+            <div class="flex justify-between pt-1">
+              <span>Monday – Friday</span>
+              <span class="font-semibold">7:30 AM – 6:00 PM</span>
+            </div>
+            <div class="flex justify-between pt-1.5">
+              <span>Saturday</span>
+              <span class="font-semibold">8:00 AM – 2:00 PM</span>
+            </div>
+            <div class="flex justify-between pt-1.5">
+              <span>Sunday</span>
+              <span class="font-semibold text-cyan-200">Emergency On-Call</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <a href="#booking" class="inline-block border border-white/60 hover:bg-white hover:text-[#006aa8] text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Book Visit
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Welcome / About Section (Exact reference layout: Text with bullets on left + Doctor giving thumbs-up on right) -->
+  <section id="about" class="py-20 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Content -->
+      <div class="lg:col-span-7 space-y-5">
+        <div>
+          <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Welcome to Aurelia Dental</p>
+          <h2 class="font-heading font-bold text-2xl sm:text-4xl text-slate-900 uppercase tracking-tight mt-1">
+            Best Care For Your <span class="text-med-blue">Smile &amp; Health</span>
+          </h2>
+        </div>
+
+        <p class="text-sm text-slate-600 leading-relaxed">
+          From minimally invasive porcelain veneers to guided dental implants and clear aligner therapy, we combine Harvard &amp; Columbia clinical precision with a calm, concierge patient experience.
+        </p>
+
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Every treatment plan is backed by low-radiation 3D cone-beam diagnostics, in-house digital smile previews, and direct PPO insurance billing with 0% APR intro financing.
+        </p>
+
+        <!-- 4 Bullet points with blue checkmark icons (Exact reference style) -->
+        <div class="space-y-2.5 pt-2">
+          <div class="flex items-center gap-3 text-sm text-slate-700">
+            <span class="w-5 h-5 rounded-full bg-med-blue/10 text-med-blue flex items-center justify-center font-bold text-xs shrink-0">&#10003;</span>
+            <span>Low-radiation 3D digital CBCT scan &amp; HD intraoral camera tour</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-slate-700">
+            <span class="w-5 h-5 rounded-full bg-med-blue/10 text-med-blue flex items-center justify-center font-bold text-xs shrink-0">&#10003;</span>
+            <span>Transparent pricing with upfront PPO insurance verification (Delta, MetLife, Cigna)</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-slate-700">
+            <span class="w-5 h-5 rounded-full bg-med-blue/10 text-med-blue flex items-center justify-center font-bold text-xs shrink-0">&#10003;</span>
+            <span>Bespoke hand-layered porcelain veneers with master ceramist shade matching</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-slate-700">
+            <span class="w-5 h-5 rounded-full bg-med-blue/10 text-med-blue flex items-center justify-center font-bold text-xs shrink-0">&#10003;</span>
+            <span>Concierge noise-canceling suites, warm towels &amp; gentle sedation options</span>
+          </div>
+        </div>
+
+        <div class="pt-4 flex flex-wrap items-center gap-6">
+          <a href="#booking" class="bg-med-blue hover:bg-med-hover text-white text-xs font-heading font-bold uppercase tracking-wider px-6 py-3.5 rounded shadow transition">
+            Learn More About Us
+          </a>
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-heading font-extrabold text-med-blue">4.9 / 5</span>
+            <div class="text-[11px] text-slate-500 leading-tight">
+              Verified Patient Score<br/><span class="text-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (450+ Reviews)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual (Doctor with Thumbs Up matching reference) -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md">
+          <!-- Subtle decorative background badge -->
+          <div class="absolute -inset-4 bg-gradient-to-tr from-med-blue/20 to-cyan-100 rounded-2xl transform rotate-1 -z-10"></div>
+          
+          <img src="./images/doctor-thumbsup.jpg" alt="Dr. Hannah Bennett - Aurelia Dental" class="w-full h-auto rounded-xl shadow-xl object-cover object-top border-4 border-white" />
+
+          <!-- Floating Metric Badge -->
+          <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md p-4 rounded-lg shadow-lg border border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-med-blue text-white flex items-center justify-center font-bold text-sm">
+              14k+
+            </div>
+            <div>
+              <p class="text-xs font-heading font-bold text-slate-900 uppercase">Smiles Restored</p>
+              <p class="text-[10px] text-slate-500">99.2% Implant 5-Yr Success</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Our Services / Features Strip (2x3 Grid with blue icon boxes - Exact match to reference) -->
+  <section id="services" class="py-20 bg-med-soft border-y border-med-border/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header with Blue Decorative Divider -->
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Our Services</p>
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight mt-1">
+          We Offer Best Dental Services
+        </h2>
+        <!-- Decorative Diamond Divider -->
+        <div class="med-divider">
+          <div class="med-divider-dot"></div>
+        </div>
+      </div>
+
+      <!-- 6 Icon Feature Boxes (2 rows of 3) -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded border border-slate-200/80 med-card-hover flex items-start gap-4">
+          <div class="w-12 h-12 rounded bg-med-blue text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- Veneer/Tooth Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.5 2 6 4.5 6 7.5c0 2.8 1.4 5.3 2 8 .6 2.7 1.5 6.5 4 6.5s3.4-3.8 4-6.5c.6-2.7 2-5.2 2-8C18 4.5 15.5 2 12 2zm0 17c-.8 0-1.4-2.2-1.9-4.8-.4-2-.8-4.2-2.1-6.7C7.4 6.3 8.7 4 12 4s4.6 2.3 4 3.5c-1.3 2.5-1.7 4.7-2.1 6.7-.5 2.6-1.1 4.8-1.9 4.8z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-slate-900 text-sm uppercase tracking-wide">Porcelain Veneers</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Ultra-thin, hand-layered ceramic restorations custom-shaded to match your facial symmetry and natural translucency.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded border border-slate-200/80 med-card-hover flex items-start gap-4">
+          <div class="w-12 h-12 rounded bg-med-blue text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- Dental Implant Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10v3H7V2zm2 5h6v2H9V7zm1 4h4v3h-4v-3zm1 5h2v6h-2v-6z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-slate-900 text-sm uppercase tracking-wide">Guided Implants</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Computer-guided implant placement for single-tooth replacements and full-arch restorations with lifetime stability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded border border-slate-200/80 med-card-hover flex items-start gap-4">
+          <div class="w-12 h-12 rounded bg-med-blue text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- Clear Aligner Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4C7.58 4 4 7.58 4 12s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm1 14h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-slate-900 text-sm uppercase tracking-wide">Clear Aligners</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Discreet, removable orthodontic aligners mapped with 3D digital impressions to align teeth without metal brackets.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white p-6 rounded border border-slate-200/80 med-card-hover flex items-start gap-4">
+          <div class="w-12 h-12 rounded bg-med-blue text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- 3D CBCT Scanner Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6h16v2H4V6zm2 4h12v2H6v-2zm-2 4h16v2H4v-2zm4 4h8v2H8v-2z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-slate-900 text-sm uppercase tracking-wide">3D CBCT Diagnostics</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Sub-millimeter nerve and bone density mapping prior to every restorative procedure with 90% less radiation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white p-6 rounded border border-slate-200/80 med-card-hover flex items-start gap-4">
+          <div class="w-12 h-12 rounded bg-med-blue text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- Sedation Comfort Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-slate-900 text-sm uppercase tracking-wide">Sedation Dentistry</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Relax in absolute calm with nitrous oxide, conscious oral sedation, noise-canceling headphones, and warm towels.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white p-6 rounded border border-slate-200/80 med-card-hover flex items-start gap-4">
+          <div class="w-12 h-12 rounded bg-med-blue text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- Dental Shield Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-slate-900 text-sm uppercase tracking-wide">Hygiene &amp; Wellness</h4>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Airflow gentle biofilm therapy, ultrasonic calculus removal, and enamel remineralization for long-term health.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Departments / Treatment Cards Grid (3x2 photo cards with READ MORE - Exact match to reference) -->
+  <section id="treatments" class="py-20 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Clinical Specialties</p>
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight mt-1">
+        Our Featured Departments
+      </h2>
+      <div class="med-divider">
+        <div class="med-divider-dot"></div>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover flex flex-col justify-between">
+        <div>
+          <div class="h-48 overflow-hidden relative">
+            <img src="./images/treat-veneers.jpg" alt="Porcelain Veneers" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+            <span class="absolute top-3 left-3 bg-med-blue text-white text-[10px] font-heading font-bold uppercase px-2.5 py-1 rounded">Cosmetic</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-slate-900 text-base uppercase tracking-tight">Porcelain Veneers &amp; Bonding</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Ultra-thin, hand-layered ceramic restorations custom-shaded to match your facial proportions and natural enamel translucency.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover flex flex-col justify-between">
+        <div>
+          <div class="h-48 overflow-hidden relative">
+            <img src="./images/treat-implants.jpg" alt="Guided Dental Implants" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+            <span class="absolute top-3 left-3 bg-med-blue text-white text-[10px] font-heading font-bold uppercase px-2.5 py-1 rounded">Restorative</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-slate-900 text-base uppercase tracking-tight">Guided Dental Implants</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Computer-guided surgical placement for single-tooth replacements and full-arch restorations with natural bite force.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover flex flex-col justify-between">
+        <div>
+          <div class="h-48 overflow-hidden relative">
+            <img src="./images/treat-aligners.jpg" alt="Clear Aligners" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+            <span class="absolute top-3 left-3 bg-med-blue text-white text-[10px] font-heading font-bold uppercase px-2.5 py-1 rounded">Orthodontics</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-slate-900 text-base uppercase tracking-tight">Clear Aligner Therapy</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Discreet, removable aligners mapped with 3D digital impressions to gently straighten crowded teeth without metal wires.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover flex flex-col justify-between">
+        <div>
+          <div class="h-48 overflow-hidden relative">
+            <img src="./images/treat-biomimetic.jpg" alt="Biomimetic Reconstruction" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+            <span class="absolute top-3 left-3 bg-med-blue text-white text-[10px] font-heading font-bold uppercase px-2.5 py-1 rounded">Reconstruction</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-slate-900 text-base uppercase tracking-tight">Biomimetic Restoration</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Preserving healthy biological tooth structures with ceramic inlays and onlays that bend and function like real enamel.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover flex flex-col justify-between">
+        <div>
+          <div class="h-48 overflow-hidden relative">
+            <img src="./images/treat-sedation.jpg" alt="Sedation Suite" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+            <span class="absolute top-3 left-3 bg-med-blue text-white text-[10px] font-heading font-bold uppercase px-2.5 py-1 rounded">Comfort</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-slate-900 text-base uppercase tracking-tight">Concierge Sedation Care</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Specialized treatment suites tailored for anxious patients with gentle oral and IV sedation options for a painless visit.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover flex flex-col justify-between">
+        <div>
+          <div class="h-48 overflow-hidden relative">
+            <img src="./images/treat-digital.jpg" alt="3D Digital Dentistry" class="w-full h-full object-cover hover:scale-105 transition duration-300" />
+            <span class="absolute top-3 left-3 bg-med-blue text-white text-[10px] font-heading font-bold uppercase px-2.5 py-1 rounded">Diagnostics</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-slate-900 text-base uppercase tracking-tight">3D Digital Smile Design</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Virtual smile preview technology lets you view and test-drive your final restoration outcome before treatment starts.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2">
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Video / Technology Banner Section (Exact match to reference video callout) -->
+  <section id="technology" class="bg-med-soft border-y border-med-border/60 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-8 items-center">
+      <!-- Left Info -->
+      <div class="lg:col-span-6 space-y-4">
+        <div class="med-callout-border pl-4">
+          <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Precision Technology</p>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight mt-1">
+            No Messy Putty Impressions
+          </h2>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Our optical 3D scanners capture thousands of high-definition images per second to create a precise digital replica of your smile—improving comfort, fit, and turnaround time with our master ceramist lab.
+        </p>
+        <div class="pt-2">
+          <a href="#booking" class="bg-med-blue hover:bg-med-hover text-white text-xs font-heading font-bold uppercase tracking-wider px-6 py-3 rounded shadow transition inline-flex items-center gap-2">
+            <span>Explore 3D Diagnostics</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Video Callout with Play Button Overlay (Exact reference element) -->
+      <div class="lg:col-span-6">
+        <div class="relative rounded overflow-hidden shadow-xl border-4 border-white group">
+          <img src="./images/consult-video.jpg" alt="Clinic Consultation" class="w-full h-64 sm:h-72 object-cover" />
+          <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/30 transition flex items-center justify-center">
+            <!-- Pulsing Round Play Button -->
+            <a href="#booking" aria-label="Play Smile Preview Video" class="w-16 h-16 rounded-full bg-white text-med-blue flex items-center justify-center shadow-2xl group-hover:scale-110 transition duration-300">
+              <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Appointment Section (Exact reference layout: Doctor holding clipboard on left + White Form on right) -->
+  <section id="booking" class="py-20 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Consultation</p>
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight mt-1">
+        Make An Appointment
+      </h2>
+      <div class="med-divider">
+        <div class="med-divider-dot"></div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <!-- Left: Friendly Doctor with Clipboard (Exact match to reference photo pose) -->
+      <div class="lg:col-span-5 text-center">
+        <div class="relative inline-block max-w-sm">
+          <img src="./images/doctor-clipboard.jpg" alt="Doctor with clipboard" class="w-full h-auto rounded-xl shadow-lg border-2 border-slate-100 object-cover" />
+          <div class="mt-4 bg-med-soft p-3 rounded border border-med-border/70 text-xs text-slate-600">
+            <span class="font-bold text-med-blue">PPO Insurance Direct Billing:</span> Delta Dental, Cigna, MetLife &amp; Aetna
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Clean Medical Form Box (Exact match to reference form fields & button) -->
+      <div class="lg:col-span-7 bg-white p-8 rounded border border-slate-200 shadow-xl">
+        <form id="appointmentForm" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="fullName" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Your Name *</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="Claire Sullivan" class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue" />
+            </div>
+            <div>
+              <label for="phone" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(617) 555-0148" class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="email" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="claire@example.com" class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue" />
+            </div>
+            <div>
+              <label for="service" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Select Service</label>
+              <select id="service" name="service" class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 bg-white focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue">
+                <option value="New Patient Exam & 3D Scan">New Patient Exam &amp; 3D Scan</option>
+                <option value="Porcelain Veneers Consultation">Porcelain Veneers Consultation</option>
+                <option value="Guided Dental Implants">Guided Dental Implants</option>
+                <option value="Clear Aligner Therapy">Clear Aligner Therapy</option>
+                <option value="Same-Day Urgent Care">Same-Day Urgent Care</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="preferredDate" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Preferred Date</label>
+              <input type="date" id="preferredDate" name="preferredDate" class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 bg-white focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue" />
+            </div>
+            <div>
+              <label for="preferredTime" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Preferred Time</label>
+              <select id="preferredTime" name="preferredTime" class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 bg-white focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue">
+                <option value="Morning (8:00 AM - 12:00 PM)">Morning (8:00 AM - 12:00 PM)</option>
+                <option value="Early Afternoon (12:00 PM - 3:00 PM)">Early Afternoon (12:00 PM - 3:00 PM)</option>
+                <option value="Late Afternoon (3:00 PM - 6:00 PM)">Late Afternoon (3:00 PM - 6:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="notes" class="block text-xs font-heading font-bold uppercase tracking-wider text-slate-700 mb-1">Message or Comfort Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Share any tooth sensitivity, aesthetic preferences, or questions..." class="w-full rounded border border-slate-300 px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-med-blue focus:ring-1 focus:ring-med-blue"></textarea>
+          </div>
+
+          <!-- Full Width Bright Blue Button (Exact reference style) -->
+          <button type="submit" id="submitBtn" class="w-full bg-med-blue hover:bg-med-hover text-white text-xs font-heading font-bold uppercase tracking-wider py-3.5 rounded shadow transition">
+            Book Appointment
+          </button>
+
+          <!-- Feedback Toast -->
+          <div id="formSuccess" class="hidden text-xs text-emerald-800 bg-emerald-50 border border-emerald-200 rounded p-3">
+            <span class="font-bold">Thank you!</span> Your appointment request has been received. Our coordinator will contact you shortly to confirm your visit.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Our Doctors Section (Exact reference layout: Left summary + 3 Doctor Cards) -->
+  <section id="doctors" class="py-20 bg-med-soft border-y border-med-border/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Left summary column -->
+        <div class="lg:col-span-3 space-y-4">
+          <div class="med-callout-border pl-4">
+            <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Our Doctors</p>
+            <h2 class="font-heading font-bold text-2xl text-slate-900 uppercase tracking-tight mt-1">
+              Qualified Specialists
+            </h2>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Our clinicians are Harvard &amp; Columbia alumni dedicated to biomimetic dental preservation, microscopic precision, and natural cosmetic outcomes.
+          </p>
+          <a href="#booking" class="inline-block border border-med-blue text-med-blue hover:bg-med-blue hover:text-white text-[11px] font-heading font-bold uppercase tracking-wider px-4 py-2 rounded transition">
+            Meet Whole Team
+          </a>
+        </div>
+
+        <!-- Right: 3 Doctor Cards with photo, name, title, and social links -->
+        <div class="lg:col-span-9 grid sm:grid-cols-3 gap-6">
+          <!-- Doctor 1 -->
+          <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover text-center">
+            <img src="./images/dr-bennett.jpg" alt="Dr. Hannah Bennett" class="w-full h-52 object-cover object-top" />
+            <div class="p-4 space-y-1">
+              <h4 class="font-heading font-bold text-slate-900 text-sm">Dr. Hannah Bennett, DMD</h4>
+              <p class="text-[11px] text-med-blue font-semibold">Cosmetic Lead &bull; Harvard Dental</p>
+              <p class="text-[11px] text-slate-500 pt-1">12+ years specializing in porcelain veneers &amp; smile design.</p>
+            </div>
+            <div class="pb-4 flex justify-center gap-2 text-slate-400 text-xs">
+              <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center hover:bg-med-blue hover:text-white transition cursor-pointer">f</span>
+              <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center hover:bg-med-blue hover:text-white transition cursor-pointer">in</span>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover text-center">
+            <img src="./images/dr-okafor.jpg" alt="Dr. David Okafor" class="w-full h-52 object-cover object-top" />
+            <div class="p-4 space-y-1">
+              <h4 class="font-heading font-bold text-slate-900 text-sm">Dr. David Okafor, DDS, MS</h4>
+              <p class="text-[11px] text-med-blue font-semibold">Implantology &bull; Columbia University</p>
+              <p class="text-[11px] text-slate-500 pt-1">Specialist in guided dental implants and bone grafting.</p>
+            </div>
+            <div class="pb-4 flex justify-center gap-2 text-slate-400 text-xs">
+              <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center hover:bg-med-blue hover:text-white transition cursor-pointer">f</span>
+              <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center hover:bg-med-blue hover:text-white transition cursor-pointer">in</span>
+            </div>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="bg-white rounded overflow-hidden border border-slate-200/80 med-card-hover text-center">
+            <img src="./images/dr-lin.jpg" alt="Dr. Sarah Lin" class="w-full h-52 object-cover object-top" />
+            <div class="p-4 space-y-1">
+              <h4 class="font-heading font-bold text-slate-900 text-sm">Dr. Sarah Lin, DMD</h4>
+              <p class="text-[11px] text-med-blue font-semibold">Orthodontics &bull; UPenn Dental</p>
+              <p class="text-[11px] text-slate-500 pt-1">Clear aligner biomechanics and deep bite corrections.</p>
+            </div>
+            <div class="pb-4 flex justify-center gap-2 text-slate-400 text-xs">
+              <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center hover:bg-med-blue hover:text-white transition cursor-pointer">f</span>
+              <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center hover:bg-med-blue hover:text-white transition cursor-pointer">in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Testimonials Section (Exact match to reference: 3 Quote Bubble Cards) -->
+  <section id="reviews" class="py-20 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Patient Stories</p>
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight mt-1">
+        What Our Patients Say
+      </h2>
+      <div class="med-divider">
+        <div class="med-divider-dot"></div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-med-soft p-6 rounded border border-med-border/80 flex flex-col justify-between">
+        <p class="text-xs text-slate-600 leading-relaxed italic">
+          "I used to dread dental appointments. Dr. Bennett walked me through every scan on screen, explained my options clearly, and my veneers look completely natural!"
+        </p>
+        <div class="pt-4 flex items-center gap-3 border-t border-slate-200/60 mt-4">
+          <div class="w-10 h-10 rounded-full bg-med-blue text-white flex items-center justify-center font-bold text-xs">
+            RM
+          </div>
+          <div>
+            <h5 class="font-heading font-bold text-slate-900 text-xs">Rachel M.</h5>
+            <p class="text-[10px] text-med-blue font-semibold">Porcelain Veneers Patient</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-med-soft p-6 rounded border border-med-border/80 flex flex-col justify-between">
+        <p class="text-xs text-slate-600 leading-relaxed italic">
+          "The scheduling was effortless, there was zero wait time, and the pricing breakdown was completely transparent from day one. Dr. Okafor's implant was flawless."
+        </p>
+        <div class="pt-4 flex items-center gap-3 border-t border-slate-200/60 mt-4">
+          <div class="w-10 h-10 rounded-full bg-med-blue text-white flex items-center justify-center font-bold text-xs">
+            TK
+          </div>
+          <div>
+            <h5 class="font-heading font-bold text-slate-900 text-xs">Thomas K.</h5>
+            <p class="text-[10px] text-med-blue font-semibold">Dental Implant Patient</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-med-soft p-6 rounded border border-med-border/80 flex flex-col justify-between">
+        <p class="text-xs text-slate-600 leading-relaxed italic">
+          "Hands down the most serene clinic I have ever visited. From warm towels to clear aligner progression on 3D monitors, it feels like a luxury medical spa."
+        </p>
+        <div class="pt-4 flex items-center gap-3 border-t border-slate-200/60 mt-4">
+          <div class="w-10 h-10 rounded-full bg-med-blue text-white flex items-center justify-center font-bold text-xs">
+            ES
+          </div>
+          <div>
+            <h5 class="font-heading font-bold text-slate-900 text-xs">Elena S.</h5>
+            <p class="text-[10px] text-med-blue font-semibold">Clear Aligner Patient</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Insurance / Newsletter Strip (Exact match to reference full-width banner) -->
+  <section class="relative bg-slate-900 py-14 overflow-hidden text-white">
+    <div class="absolute inset-0 z-0">
+      <img src="./images/hero.jpg" alt="Doctor Banner" class="w-full h-full object-cover opacity-20" />
+      <div class="absolute inset-0 bg-med-blue/80 mix-blend-multiply"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-4">
+      <h3 class="font-heading font-bold text-xl sm:text-2xl uppercase tracking-wider">
+        PPO Insurance Accepted &bull; 0% Intro Financing Available
+      </h3>
+      <p class="text-xs text-white/90 max-w-xl mx-auto">
+        We partner with Delta Dental, MetLife, Cigna, Aetna, CareCredit, and Proceed Finance to ensure transparent, accessible care for your smile.
+      </p>
+      <div class="pt-2 flex justify-center">
+        <a href="#booking" class="bg-white hover:bg-slate-100 text-med-blue text-xs font-heading font-bold uppercase tracking-wider px-6 py-3 rounded shadow transition">
+          Verify Your Insurance Coverage
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FAQ Accordion Section (Clean Medical Style) -->
+  <section id="faq" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-med-blue">Patient Information</p>
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight mt-1">
+        Frequently Asked Questions
+      </h2>
+      <div class="med-divider">
+        <div class="med-divider-dot"></div>
+      </div>
+    </div>
+
+    <div class="space-y-3" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="faq-item bg-white rounded border border-slate-200 overflow-hidden shadow-sm">
+        <button type="button" class="faq-question w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+          <span class="font-heading font-bold text-slate-900 text-sm">Do you accept my dental insurance?</span>
+          <span class="faq-icon text-med-blue font-bold text-base">+</span>
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+          Yes. We accept and directly bill most major PPO dental insurances (including Delta Dental, MetLife, Cigna, Guardian, and Aetna). Our dedicated insurance coordinators verify your benefits beforehand to provide an itemized breakdown before treatment begins.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item bg-white rounded border border-slate-200 overflow-hidden shadow-sm">
+        <button type="button" class="faq-question w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+          <span class="font-heading font-bold text-slate-900 text-sm">What sedation options do you offer for anxious patients?</span>
+          <span class="faq-icon text-med-blue font-bold text-base">+</span>
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+          We offer gentle nitrous oxide (laughing gas), conscious oral sedation, and IV sedation administered with board-certified anesthesiologists. Every suite features noise-canceling headsets, warm towels, and soothing aromatics.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item bg-white rounded border border-slate-200 overflow-hidden shadow-sm">
+        <button type="button" class="faq-question w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+          <span class="font-heading font-bold text-slate-900 text-sm">How long does a porcelain veneer makeover take?</span>
+          <span class="faq-icon text-med-blue font-bold text-base">+</span>
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+          A bespoke smile makeover generally requires just two visits spanning 2 to 3 weeks. At visit one, we capture 3D scans and create a mock-up. At visit two, your custom handcrafted veneers are bonded under magnification.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item bg-white rounded border border-slate-200 overflow-hidden shadow-sm">
+        <button type="button" class="faq-question w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+          <span class="font-heading font-bold text-slate-900 text-sm">Are monthly payment plans and 0% financing available?</span>
+          <span class="faq-icon text-med-blue font-bold text-base">+</span>
+        </button>
+        <div class="faq-answer hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+          Yes! We partner with CareCredit, Proceed Finance, and Sunbit to provide interest-free 6-, 12-, and 24-month payment plans, as well as extended term financing with no hard credit pull pre-qualification.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. Footer (Exact match to reference dark navy footer with 4 columns + photo stream) -->
+  <footer class="bg-med-navy text-slate-400 text-xs border-t-4 border-med-blue">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- Col 1: About Clinic & Socials -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-white">
+          <div class="w-8 h-8 rounded bg-med-blue flex items-center justify-center font-bold text-sm">
+            +
+          </div>
+          <span class="font-heading font-bold text-base text-white tracking-wider uppercase">Aurelia Dental</span>
+        </div>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Comprehensive cosmetic, restorative, and implant dentistry based on biomimetic precision and relaxed hospitality in Boston.
+        </p>
+        <div class="flex items-center gap-2 pt-2">
+          <a href="#" class="w-7 h-7 rounded bg-white/10 hover:bg-med-blue text-white flex items-center justify-center transition">f</a>
+          <a href="#" class="w-7 h-7 rounded bg-white/10 hover:bg-med-blue text-white flex items-center justify-center transition">t</a>
+          <a href="#" class="w-7 h-7 rounded bg-white/10 hover:bg-med-blue text-white flex items-center justify-center transition">in</a>
+          <a href="#" class="w-7 h-7 rounded bg-white/10 hover:bg-med-blue text-white flex items-center justify-center transition">ig</a>
+        </div>
+      </div>
+
+      <!-- Col 2: Services / Departments Links -->
+      <div class="space-y-3">
+        <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs border-b border-white/10 pb-2">Departments</h4>
+        <ul class="space-y-2">
+          <li><a href="#treatments" class="hover:text-med-light transition">Porcelain Veneers</a></li>
+          <li><a href="#treatments" class="hover:text-med-light transition">Guided Dental Implants</a></li>
+          <li><a href="#treatments" class="hover:text-med-light transition">Clear Aligner Therapy</a></li>
+          <li><a href="#treatments" class="hover:text-med-light transition">Biomimetic Inlays</a></li>
+          <li><a href="#technology" class="hover:text-med-light transition">3D CBCT Diagnostics</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Clinic Photo Stream (Grid of 6 mini thumbnails - Exact match to reference) -->
+      <div class="space-y-3">
+        <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs border-b border-white/10 pb-2">Clinic Stream</h4>
+        <div class="grid grid-cols-3 gap-2">
+          <img src="./images/treat-veneers.jpg" alt="Clinic photo 1" class="rounded h-16 w-full object-cover hover:opacity-80 transition cursor-pointer" />
+          <img src="./images/treat-implants.jpg" alt="Clinic photo 2" class="rounded h-16 w-full object-cover hover:opacity-80 transition cursor-pointer" />
+          <img src="./images/dr-bennett.jpg" alt="Clinic photo 3" class="rounded h-16 w-full object-cover hover:opacity-80 transition cursor-pointer" />
+          <img src="./images/dr-okafor.jpg" alt="Clinic photo 4" class="rounded h-16 w-full object-cover hover:opacity-80 transition cursor-pointer" />
+          <img src="./images/dr-lin.jpg" alt="Clinic photo 5" class="rounded h-16 w-full object-cover hover:opacity-80 transition cursor-pointer" />
+          <img src="./images/consult-video.jpg" alt="Clinic photo 6" class="rounded h-16 w-full object-cover hover:opacity-80 transition cursor-pointer" />
+        </div>
+      </div>
+
+      <!-- Col 4: Opening Hours & Contact -->
+      <div class="space-y-3">
+        <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs border-b border-white/10 pb-2">Opening Hours</h4>
+        <div class="space-y-1.5 text-slate-400">
+          <div class="flex justify-between">
+            <span>Monday – Friday:</span>
+            <span class="text-white">7:30 – 18:00</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Saturday:</span>
+            <span class="text-white">8:00 – 14:00</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Sunday:</span>
+            <span class="text-med-light">Closed</span>
+          </div>
+        </div>
+        <div class="pt-3 border-t border-white/10">
+          <p class="text-slate-300 font-semibold">280 Newbury St, Suite 400</p>
+          <p class="text-slate-400">Boston, MA 02116</p>
+          <p class="text-med-light font-bold pt-1">Tel: (617) 555-0194</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-footer copyright bar -->
+    <div class="bg-med-navyDark py-4 text-center text-slate-500 text-[11px] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p>&copy; 2026 Aurelia Dental &amp; Aesthetics. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-400 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400 transition">Terms of Use</a>
+          <a href="#" class="hover:text-slate-400 transition">HIPAA Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Mobile Menu, FAQ Accordion, Form Submission -->
+  <script>
+    // Mobile Drawer Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const icon = btn.querySelector('.faq-icon');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // Close others
+        document.querySelectorAll('.faq-item').forEach(other => {
+          if (other !== item) {
+            other.querySelector('.faq-answer').classList.add('hidden');
+            other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            other.querySelector('.faq-icon').textContent = '+';
+          }
+        });
+
+        // Toggle
+        if (isExpanded) {
+          answer.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          icon.textContent = '+';
+        } else {
+          answer.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          icon.textContent = '−';
+        }
+      });
+    });
+
+    // Appointment Form
+    const appointmentForm = document.getElementById('appointmentForm');
+    const formSuccess = document.getElementById('formSuccess');
+    if (appointmentForm && formSuccess) {
+      appointmentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        formSuccess.classList.remove('hidden');
+        appointmentForm.reset();
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
+
+    // Set today as minimum booking date
+    const datePicker = document.getElementById('preferredDate');
+    if (datePicker) {
+      datePicker.min = new Date().toISOString().split('T')[0];
+    }
+  </script>
+</body>
+</html>
